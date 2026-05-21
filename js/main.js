@@ -2,8 +2,7 @@
    POS PH PRO — Landing Page interactions
    ========================================================= */
 
-// ---- TODO: Replace this with the real MEGA download URL when ready ----
-const MEGA_DOWNLOAD_URL = ''; // e.g. 'https://mega.nz/file/XXXXX#YYYYY'
+const MEGA_DOWNLOAD_URL = 'https://mega.nz/file/ftZTlZ6A#y1wnY6Wa6eviV8pB1WMDMR7ywqNgjwiUnD4yoshX7Nw';
 
 (function () {
     'use strict';
@@ -68,7 +67,7 @@ const MEGA_DOWNLOAD_URL = ''; // e.g. 'https://mega.nz/file/XXXXX#YYYYY'
     }
 
     /* Active nav link based on scroll position */
-    const sections = ['features', 'screenshots', 'pricing', 'contact']
+    const sections = ['price', 'features', 'screenshots', 'contact']
         .map((id) => document.getElementById(id))
         .filter(Boolean);
     const navLinks = document.querySelectorAll('.nav__links a');

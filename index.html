@@ -13,6 +13,10 @@
     <meta property="og:description" content="A modern Windows point of sale built for Philippine retailers. Free trial available.">
     <meta property="og:image" content="img/screen-dashboard.png">
 
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="img/logo.png">
+    <link rel="apple-touch-icon" href="img/logo.png">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -26,15 +30,7 @@
         <div class="container nav__inner">
             <a class="brand" href="#top" aria-label="POS PH PRO home">
                 <span class="brand__mark" aria-hidden="true">
-                    <svg viewBox="0 0 32 32" fill="none">
-                        <rect x="2" y="2" width="28" height="28" rx="8" fill="url(#bg)"/>
-                        <path d="M9 22V10h7c2.8 0 4.7 1.6 4.7 4.1S18.8 18.2 16 18.2h-3V22H9zm4-7h2.5c1.2 0 1.9-.6 1.9-1.9s-.7-1.9-1.9-1.9H13v3.8z" fill="#fff"/>
-                        <defs>
-                            <linearGradient id="bg" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#22D3EE"/><stop offset="1" stop-color="#1E3A8A"/>
-                            </linearGradient>
-                        </defs>
-                    </svg>
+                    <img src="img/logo.png" alt="" class="brand__logo">
                 </span>
                 <span class="brand__name">POS <span class="brand__name--accent">PH PRO</span></span>
             </a>
@@ -42,11 +38,11 @@
             <nav class="nav__links" aria-label="Sections">
                 <a href="#features">Features</a>
                 <a href="#screenshots">See it</a>
-                <a href="#pricing">Pricing</a>
+                <a href="#price">Pricing</a>
                 <a href="#contact">Contact</a>
             </nav>
 
-            <a href="#pricing" class="btn btn--accent btn--sm">Get free trial</a>
+            <a href="https://mega.nz/file/ftZTlZ6A#y1wnY6Wa6eviV8pB1WMDMR7ywqNgjwiUnD4yoshX7Nw" class="btn btn--accent btn--sm" data-download="free-trial" target="_blank" rel="noopener">Download now FREE</a>
 
             <button class="nav__toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">
                 <span></span><span></span><span></span>
@@ -55,9 +51,9 @@
         <nav id="mobileNav" class="nav__mobile" aria-label="Mobile menu" hidden>
             <a href="#features">Features</a>
             <a href="#screenshots">See it</a>
-            <a href="#pricing">Pricing</a>
+            <a href="#price">Pricing</a>
             <a href="#contact">Contact</a>
-            <a href="#pricing" class="btn btn--accent">Get free trial</a>
+            <a href="https://mega.nz/file/ftZTlZ6A#y1wnY6Wa6eviV8pB1WMDMR7ywqNgjwiUnD4yoshX7Nw" class="btn btn--accent" data-download="free-trial" target="_blank" rel="noopener">Install Now!</a>
         </nav>
     </header>
 
@@ -75,7 +71,7 @@
                     VAT done right. Senior &amp; PWD discounts in one tap. Your phone becomes a wireless scanner.
                 </p>
                 <div class="hero__actions">
-                    <a href="#pricing" class="btn btn--accent btn--lg">Start free trial</a>
+                    <a href="https://mega.nz/file/ftZTlZ6A#y1wnY6Wa6eviV8pB1WMDMR7ywqNgjwiUnD4yoshX7Nw" class="btn btn--accent btn--lg" data-download="free-trial" target="_blank" rel="noopener">Install now!</a>
                     <a href="#screenshots" class="btn btn--ghost btn--lg">See it in action</a>
                 </div>
                 <ul class="hero__bullets">
@@ -85,10 +81,115 @@
                 </ul>
             </div>
             <div class="hero__shot">
-                <div class="shot-frame">
-                    <img src="img/screen-dashboard.png" alt="POS PH PRO dashboard with sales KPIs and quick actions" loading="eager" />
+                <div class="hero__stage">
+                    <div class="hero__aurora" aria-hidden="true">
+                        <span class="hero__blob hero__blob--cyan"></span>
+                        <span class="hero__blob hero__blob--indigo"></span>
+                        <span class="hero__grid"></span>
+                    </div>
+
+                    <div class="hero__device">
+                        <div class="hero__device-bar" aria-hidden="true">
+                            <span class="hero__dot hero__dot--r"></span>
+                            <span class="hero__dot hero__dot--y"></span>
+                            <span class="hero__dot hero__dot--g"></span>
+                            <span class="hero__device-title">pos-ph-pro &nbsp;·&nbsp; Dashboard</span>
+                            <span class="hero__device-live"><span></span> LIVE</span>
+                        </div>
+                        <div class="hero__device-screen">
+                            <img src="img/screen-dashboard.png" alt="POS PH PRO dashboard with sales KPIs and quick actions" loading="eager" />
+                            <span class="hero__sheen" aria-hidden="true"></span>
+                        </div>
+                    </div>
+
+                    <div class="hero__phone">
+                        <img src="img/POS-android-app.png" alt="POS PH PRO Android companion app showing today's revenue and sales" loading="eager" />
+                        <span class="hero__phone-sheen" aria-hidden="true"></span>
+                    </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- =============== PRICING =============== -->
+    <section id="price" class="pricing">
+        <div class="container">
+            <header class="section-head">
+                <span class="eyebrow eyebrow--center">Plans &amp; pricing</span>
+                <h2>Try it free. Buy it once. Own it for life.</h2>
+                <p>Start with the free trial — no card, no sign-up form. If it fits your shop, upgrade to PRO or MULTI with a one-time payment.</p>
+            </header>
+
+            <div class="plans">
+
+                <article class="plan">
+                    <header class="plan__head">
+                        <span class="plan__tag">Limited</span>
+                        <h3 class="plan__name">Download Free</h3>
+                        <p class="plan__price"><span class="plan__amt">₱0</span></p>
+                        <p class="plan__sub">Try the full product on one PC.</p>
+                    </header>
+                    <ul class="plan__list">
+                        <li>1 Windows desktop</li>
+                        <li>1 cashier account</li>
+                        <li>Full point of sale &amp; inventory</li>
+                        <li>Receipts &amp; barcode labels</li>
+                        <li class="plan__list-muted">Phone scanner — PRO only</li>
+                        <li class="plan__list-muted">Multi-cashier — PRO only</li>
+                    </ul>
+                    <a href="https://mega.nz/file/ftZTlZ6A#y1wnY6Wa6eviV8pB1WMDMR7ywqNgjwiUnD4yoshX7Nw" class="btn btn--ghost btn--full" data-download="free-trial" target="_blank" rel="noopener">
+                        Download free trial
+                    </a>
+                </article>
+
+                <article class="plan plan--feature">
+                    <span class="plan__ribbon">Most popular</span>
+                    <header class="plan__head">
+                        <span class="plan__tag">PRO</span>
+                        <h3 class="plan__name">PRO</h3>
+                        <p class="plan__price">
+                            <span class="plan__was">₱4,000</span>
+                            <span class="plan__amt">₱1,800</span>
+                        </p>
+                        <p class="plan__sub">Lifetime license — one-time payment. For a single shop with one register.</p>
+                    </header>
+                    <ul class="plan__list">
+                        <li><strong>1 Windows desktop</strong></li>
+                        <li><strong>2 Android phones</strong> as scanners / managers</li>
+                        <li>Unlimited cashier accounts</li>
+                        <li>All free-trial features</li>
+                        <li>Local REST API for integrations</li>
+                        <li>Free updates &amp; lifetime use</li>
+                    </ul>
+                    <a href="#contact" class="btn btn--accent btn--full">Contact to buy</a>
+                </article>
+
+                <article class="plan">
+                    <header class="plan__head">
+                        <span class="plan__tag">MULTI</span>
+                        <h3 class="plan__name">MULTI</h3>
+                        <p class="plan__price">
+                            <span class="plan__was">₱14,000</span>
+                            <span class="plan__amt">₱6,800</span>
+                        </p>
+                        <p class="plan__sub">Lifetime license — one-time payment. For a chain or busy store with many tills.</p>
+                    </header>
+                    <ul class="plan__list">
+                        <li><strong>Up to 5 Windows desktops</strong></li>
+                        <li><strong>Up to 20 Android phones</strong></li>
+                        <li>Unlimited cashier accounts</li>
+                        <li>All PRO features</li>
+                        <li>Priority support over Messenger / Viber</li>
+                        <li>Free updates &amp; lifetime use</li>
+                    </ul>
+                    <a href="#contact" class="btn btn--accent-outline btn--full">Contact to buy</a>
+                </article>
+
+            </div>
+
+            <p class="pricing__fineprint">
+                Paid plans include free updates and lifetime use. Activations are tied to the device — re-installations on the same PC keep working.
+            </p>
         </div>
     </section>
 
@@ -97,7 +198,7 @@
         <div class="container trust__inner">
             <div class="trust__item"><strong>One Windows install</strong><span>Runs on any laptop or desktop.</span></div>
             <div class="trust__item"><strong>Offline-first</strong><span>Wi-Fi cuts out, the shop keeps selling.</span></div>
-            <div class="trust__item"><strong>No monthly fees</strong><span>Buy once. Use it for the year.</span></div>
+            <div class="trust__item"><strong>No monthly fees</strong><span>Buy once. Use it for life.</span></div>
             <div class="trust__item"><strong>English UI</strong><span>Clear, simple, no jargon.</span></div>
         </div>
     </section>
@@ -213,83 +314,6 @@
         </div>
     </section>
 
-    <!-- =============== PRICING =============== -->
-    <section id="pricing" class="pricing">
-        <div class="container">
-            <header class="section-head">
-                <span class="eyebrow eyebrow--center">Plans &amp; pricing</span>
-                <h2>Try it free. Buy it once. Own the year.</h2>
-                <p>Start with the free trial — no card, no sign-up form. If it fits your shop, upgrade to PRO or MULTI and own the full year.</p>
-            </header>
-
-            <div class="plans">
-
-                <article class="plan">
-                    <header class="plan__head">
-                        <span class="plan__tag">Limitated</span>
-                        <h3 class="plan__name">Download Free</h3>
-                        <p class="plan__price"><span class="plan__amt">₱0</span></p>
-                        <p class="plan__sub">Try the full product on one PC.</p>
-                    </header>
-                    <ul class="plan__list">
-                        <li>1 Windows desktop</li>
-                        <li>1 cashier account</li>
-                        <li>Full point of sale &amp; inventory</li>
-                        <li>Receipts &amp; barcode labels</li>
-                        <li class="plan__list-muted">Phone scanner — PRO only</li>
-                        <li class="plan__list-muted">Multi-cashier — PRO only</li>
-                    </ul>
-                    <!-- TODO: replace href with the MEGA download URL when ready -->
-                    <a href="#" class="btn btn--ghost btn--full" data-download="free-trial">
-                        Download free trial
-                    </a>
-                </article>
-
-                <article class="plan plan--feature">
-                    <span class="plan__ribbon">Most popular</span>
-                    <header class="plan__head">
-                        <span class="plan__tag">PRO</span>
-                        <h3 class="plan__name">PRO</h3>
-                        <p class="plan__price"><span class="plan__amt">Contact us</span></p>
-                        <p class="plan__sub">For a single shop with one register.</p>
-                    </header>
-                    <ul class="plan__list">
-                        <li><strong>1 Windows desktop</strong></li>
-                        <li><strong>2 Android phones</strong> as scanners / managers</li>
-                        <li>Unlimited cashier accounts</li>
-                        <li>All free-trial features</li>
-                        <li>Local REST API for integrations</li>
-                        <li>One full year of use</li>
-                    </ul>
-                    <a href="#contact" class="btn btn--accent btn--full">Contact to buy</a>
-                </article>
-
-                <article class="plan">
-                    <header class="plan__head">
-                        <span class="plan__tag">MULTI</span>
-                        <h3 class="plan__name">MULTI</h3>
-                        <p class="plan__price"><span class="plan__amt">Contact us</span></p>
-                        <p class="plan__sub">For a chain or busy store with many tills.</p>
-                    </header>
-                    <ul class="plan__list">
-                        <li><strong>Up to 5 Windows desktops</strong></li>
-                        <li><strong>Up to 20 Android phones</strong></li>
-                        <li>Unlimited cashier accounts</li>
-                        <li>All PRO features</li>
-                        <li>Priority support over Messenger / Viber</li>
-                        <li>One full year of use</li>
-                    </ul>
-                    <a href="#contact" class="btn btn--accent-outline btn--full">Contact to buy</a>
-                </article>
-
-            </div>
-
-            <p class="pricing__fineprint">
-                All plans include free updates within the licensed year. Activations are tied to the device — re-installations on the same PC keep working.
-            </p>
-        </div>
-    </section>
-
     <!-- =============== CONTACT =============== -->
     <section id="contact" class="contact">
         <div class="contact__bg" aria-hidden="true"></div>
@@ -313,24 +337,23 @@
                     <span class="contact-card__cta">Open →</span>
                 </a>
 
-                <a class="contact-card contact-card--viber" href="viber://chat?number=%2B639614804770">
+                <a class="contact-card contact-card--viber" href="viber://chat?number=%2B639972413501">
                     <div class="contact-card__icon">
                         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M14.7 1.2c-3.6-.6-7.7-.4-10.5 1.9-2 1.7-2.8 4.4-2.9 7.2 0 2.8 0 5.6 1.2 8.2.7 1.4 1.5 2.7 2.4 3.9V24l3.4-1.9c1.3.4 2.6.6 3.9.6 4.7 0 9.1-1.7 11.2-5.6 1.4-2.6 1.6-5.7 1-8.6-1-4.5-4.5-6.8-9.7-7.3Zm-2.5 14.6-.4.4c-.6.2-1.3 0-1.9-.2-1.6-.7-2.9-1.7-4-3.1-.7-.9-1.3-1.9-1.6-3-.2-.7-.2-1.3.4-1.8l.5-.4c.3-.2.6-.2.8.1l1.5 1.8c.2.3.2.6 0 .8l-.6.5c-.2.2-.3.4-.1.7.6 1.3 1.7 2.5 3 3.2.3.1.5.1.7-.1l.6-.6c.2-.2.5-.2.8 0l1.8 1.4c.3.3.3.6.1.9Z"/></svg>
                     </div>
                     <div class="contact-card__body">
                         <strong>Viber</strong>
-                        <span>+63 961 480 4770</span>
+                        <span>+63 997 241 3501</span>
                     </div>
                     <span class="contact-card__cta">Chat →</span>
                 </a>
 
-                <a class="contact-card" href="tel:+639614804770">
+                <a class="contact-card" href="tel:+639972413501">
                     <div class="contact-card__icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.86.31 1.71.57 2.53a2 2 0 0 1-.45 2.11L8 9.56a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.11-.45c.82.26 1.67.45 2.53.57A2 2 0 0 1 22 16.92Z"/></svg>
                     </div>
                     <div class="contact-card__body">
                         <strong>Call us</strong>
-                        <span>0961 480 4770</span>
                         <span>0997 241 3501</span>
                     </div>
                     <span class="contact-card__cta">Dial →</span>
@@ -357,15 +380,7 @@
             <div class="foot__left">
                 <a class="brand brand--light" href="#top" aria-label="POS PH PRO home">
                     <span class="brand__mark">
-                        <svg viewBox="0 0 32 32" fill="none">
-                            <rect x="2" y="2" width="28" height="28" rx="8" fill="url(#bgF)"/>
-                            <path d="M9 22V10h7c2.8 0 4.7 1.6 4.7 4.1S18.8 18.2 16 18.2h-3V22H9zm4-7h2.5c1.2 0 1.9-.6 1.9-1.9s-.7-1.9-1.9-1.9H13v3.8z" fill="#fff"/>
-                            <defs>
-                                <linearGradient id="bgF" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
-                                    <stop stop-color="#22D3EE"/><stop offset="1" stop-color="#1E3A8A"/>
-                                </linearGradient>
-                            </defs>
-                        </svg>
+                        <img src="img/logo.png" alt="" class="brand__logo">
                     </span>
                     <span class="brand__name">POS <span class="brand__name--accent">PH PRO</span></span>
                 </a>
@@ -376,17 +391,16 @@
                     <h4>Product</h4>
                     <a href="#features">Features</a>
                     <a href="#screenshots">Screenshots</a>
-                    <a href="#pricing">Pricing</a>
+                    <a href="#price">Pricing</a>
                 </div>
                 <div>
                     <h4>Contact</h4>
                     <a href="https://m.me/1169201992934401" target="_blank" rel="noopener">Messenger</a>
-                    <a href="viber://chat?number=%2B639614804770">Viber</a>
+                    <a href="viber://chat?number=%2B639972413501">Viber</a>
                     <a href="https://www.facebook.com/share/1BUa8B3UhY/" target="_blank" rel="noopener">Facebook</a>
                 </div>
                 <div>
                     <h4>Phone</h4>
-                    <a href="tel:+639614804770">0961 480 4770</a>
                     <a href="tel:+639972413501">0997 241 3501</a>
                 </div>
             </div>
