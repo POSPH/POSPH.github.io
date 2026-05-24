@@ -2,7 +2,7 @@
    POS PH PRO — Landing Page interactions
    ========================================================= */
 
-const MEGA_DOWNLOAD_URL = 'https://mega.nz/file/ftZTlZ6A#y1wnY6Wa6eviV8pB1WMDMR7ywqNgjwiUnD4yoshX7Nw';
+const MEGA_DOWNLOAD_URL = 'https://mega.nz/file/zs4AWapI#IY4FeGkgvTrXER-WfjqkeJKyg1DS0dPJbMrRI87qyfY';
 
 (function () {
     'use strict';
